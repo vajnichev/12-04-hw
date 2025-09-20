@@ -21,7 +21,7 @@ join city c2 on c2.city_id = a.city_id
 group by s.staff_id, c2.city_id 
 having COUNT(c.customer_id) > 300;
 ```
-![png]()
+![png](https://github.com/vajnichev/12-04-hw/blob/main/IMG/12.4.1.png)
 
 ---
 
@@ -35,7 +35,8 @@ where f.`length`  >
   (select AVG(`length`) 
   from film);   
 ```
-![png]()
+![png](https://github.com/vajnichev/12-04-hw/blob/main/IMG/12.4.2.png)
+
 ---
 
 ### Задание 3
@@ -50,7 +51,7 @@ from (
 order by t1.amount_of_payments desc  
 limit 1;
 ```
-![png]()
+![png](https://github.com/vajnichev/12-04-hw/blob/main/IMG/12.4.3.png)
 
 ---
 
@@ -71,7 +72,7 @@ from (
   from sakila.payment p 
   group by staff_id ) t1;
 ```
-![png]()
+![png](https://github.com/vajnichev/12-04-hw/blob/main/IMG/12.4.4.png)
 
 ---
 
@@ -84,4 +85,4 @@ right join sakila.inventory i on i.inventory_id = r.inventory_id
 right join sakila.film f  on f.film_id = i.film_id 
 where  r.rental_id is null;
 ```
-![png]()
+![png](https://github.com/vajnichev/12-04-hw/blob/main/IMG/12.4.5.png)
